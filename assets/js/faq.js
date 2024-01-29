@@ -24,4 +24,12 @@
         }
         $(".faq-items").replaceWith(faq);
     }
+
+    $("#print-faq-button").on('click', ()=>{
+        const pdfUrl = "/assets/pdf/Employee FAQs.pdf";
+        // print pdf
+        window.open(pdfUrl, '_blank');
+
+    })
+
 })();
