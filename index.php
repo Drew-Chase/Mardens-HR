@@ -17,7 +17,7 @@ $markdown = new Parsedown();
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/main.min.css">
@@ -70,15 +70,22 @@ $markdown = new Parsedown();
                 </div>
             </div>
         </section>
+
+        <section id="eap" class="banner">
+            <h2>Employee Assistance Program</h2>
+            <a href="tel:1-800-386-7055">1-800-386-7055</a>
+        </section>
+
         <section id="contact-us" class="col center horizontal">
-            <div class="content-selector center horizontal wrap">
-                <div class="content-selector-button" id="human-resources-button" active>Human Resources</div>
-                <div class="content-selector-button" id="esp-button">Employee Suggestion Program</div>
-            </div>
 
             <h2 id="content-title" class="center horizontal" style="margin-bottom: 1rem;">Contact HR</h2>
             <p class="center horizontal" style="margin-top: 0;">If you don't have an email address, please enter a phone number to best contact you by.</p>
-            <form class="col" action="javascript:void(0);">
+            <p class="center horizontal">Please select one of the options below to get started!</p>
+            <div class="content-selector center horizontal wrap">
+                <div class="content-selector-button" id="human-resources-button">Contact HR</div>
+                <div class="content-selector-button" id="esp-button">Contact Employee Suggestion Program</div>
+            </div>
+            <form class="col" action="javascript:void(0);" style="display: none">
 
                 <div class="success col">
                     <h1>Submitted!</h1>
@@ -125,13 +132,60 @@ $markdown = new Parsedown();
             </form>
         </section>
 
-        <div id="eap" class="banner">
-            <h2>Employee Assistance Program</h2>
-            <a href="tel:1-800-386-7055">1-800-386-7055</a>
-        </div>
+        <section id="hr-contact-info" class="col">
+            <h2>HR Contact Information</h2>
+            <div class="row wrap">
+                <div class="panel col fill center vertical">
+                    <h4>Cathy Callahan</h4>
+                    <ul>
+                        <li>Email:<b> ccallahan@mardens.com</b></li>
+                        <li>
+                            Phone: <b>
+                                (207) 660-9218</b>
+                        </li>
+                        <li>
+                            Cellphone: <b> (207) 649-3067</b>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr style="width: 50%;">
+                    <br>
+                    <div class="row">
+                        <a href="mailto:ccallahan@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:207-660-9218" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
+                        <a href="tel:207-649-3067" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
+                    </div>
+                </div>
+                <div class="panel col fill center vertical">
+                    <h4>Kira Estes</h4>
+                    <ul>
+                        <li>
+                            Email: <b> kira.estes@mardens.com</b>
+                        </li>
+                        <li>
+                            Phone: <b> (207) 660-9292</b>
+                        </li>
+                        <li>
+                            Cellphone: <b> (603) 455-1804</b>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr style="width: 50%;">
+                    <br>
+                    <div class="row">
+                        <a href="mailto:kira.estes@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:207-660-9292" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
+                        <a href="tel:603-455-1804" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="faq">
-            <h2>FAQ</h2>
+            <div class="fill row">
+                <h2 class="fill">FAQ</h2>
+                <button id="print-faq-button"><i class="fa-solid fa-up-right-from-square"></i></button>
+            </div>
             <div class="faq-items col">
             </div>
         </section>
