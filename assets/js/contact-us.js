@@ -1,5 +1,11 @@
 $(".content-selector-button").on("click", e => {
+    $("#contact-us form").css("display", "");
     const target = $(e.target);
+    if (target.attr("active") !== undefined) {
+        $("#contact-us form").css("display", "none");
+        target.attr("active", null);
+        return;
+    }
     const targetId = target.attr("id");
     $(".content-selector-button").attr("active", null);
     target.attr("active", true);
