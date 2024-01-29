@@ -84,6 +84,8 @@ $markdown = new Parsedown();
                     <p>Sorry, we were unable to submit your message! Please try again later.</p>
                 </div>
 
+                <div class="loading hidden"></div>
+
                 <div class="row fill">
                     <div class="col fill floating-input">
                         <input type="text" id="fname" name="fname" placeholder="" required>
