@@ -5,6 +5,7 @@ $(".content-selector-button").on("click", e => {
     target.attr("active", true);
 });
 $("form").on("submit", async e => {
+    $("#contact-us .loading").removeClass("hidden");
     const form = $(e.target);
     const formData = form.serialize();
     console.log(formData)
@@ -19,9 +20,10 @@ $("form").on("submit", async e => {
     }
 
     await $.ajax(url.href, {
-        method, headers, data: formData, success: data => {
+        method, headers, data: formData, complete: () => {
+            $("#contact-us .loading").addClass("hidden");
+        }, success: data => {
             console.log(data);
-            const response = JSON.parse(data);
             form.trigger("reset");
 
             form.find(".success").css("opacity", 1);
