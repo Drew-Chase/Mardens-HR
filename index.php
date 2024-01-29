@@ -26,6 +26,7 @@ $markdown = new Parsedown();
     <link rel="stylesheet" href="/assets/css/scrollbar.min.css">
     <link rel="stylesheet" href="/assets/css/content.min.css">
     <link rel="stylesheet" href="/assets/css/inputs.min.css">
+    <link rel="stylesheet" href="/assets/css/faq.min.css">
 
 
     <!-- Font Awesome -->
@@ -116,7 +117,7 @@ $markdown = new Parsedown();
                 </div>
 
                 <button id="submit-button" title="Submit contact form!"><i class="fa-solid fa-paper-plane"></i></button>
-                <!--                <button id="submit-button">Submit <i class="fa-solid fa-paper-plane"></i></button>-->
+                <button id="full-submit-button" style="display: none">Submit <i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </section>
 
@@ -128,9 +129,6 @@ $markdown = new Parsedown();
         <section id="faq">
             <h2>FAQ</h2>
             <div class="faq-items col">
-                <?php
-                echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/faq.md'));
-                ?>
             </div>
         </section>
 
@@ -150,5 +148,6 @@ $markdown = new Parsedown();
 <script src="/assets/js/sidebar.min.js"></script>
 <script src="/assets/js/skirting.min.js"></script>
 <script src="/assets/js/contact-us.min.js"></script>
+<script src="/assets/lib/showdown/showdown.min.js"></script>
 </body>
 </html>
