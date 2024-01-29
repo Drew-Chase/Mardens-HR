@@ -22,7 +22,6 @@
             `
             faq.append(template);
         }
-        console.log(faq.html());
         $(".faq-items").replaceWith(faq);
     }
 })();
