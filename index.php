@@ -27,6 +27,7 @@ $markdown = new Parsedown();
     <link rel="stylesheet" href="/assets/css/content.min.css">
     <link rel="stylesheet" href="/assets/css/inputs.min.css">
     <link rel="stylesheet" href="/assets/css/faq.min.css">
+    <link rel="stylesheet" href="/assets/css/responsive.min.css">
 
 
     <!-- Font Awesome -->
@@ -43,16 +44,19 @@ $markdown = new Parsedown();
 <main class="row">
     <div class="row">
         <div id="sidebar" class="col">
-            <?php
-            echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/sidebar.md'));
-            ?>
+            <button id="hamburger"><i class="fa fa-bars"></i></button>
+            <div id="sidebar-items" class="col">
+                <?php
+                echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/sidebar.md'));
+                ?>
+            </div>
         </div>
     </div>
 
     <div id="content" class="col">
         <section id="hr-news-alerts" class="col">
             <h2>HR News and Alerts</h2>
-            <div class="row">
+            <div class="row wrap">
                 <div class="panel col fill center vertical">
                     <h4>Handbook</h4>
                     <p>Click below to check out our current Employee Handbook</p>
@@ -67,7 +71,7 @@ $markdown = new Parsedown();
             </div>
         </section>
         <section id="contact-us" class="col center horizontal">
-            <div class="content-selector center horizontal">
+            <div class="content-selector center horizontal wrap">
                 <div class="content-selector-button" id="human-resources-button" active>Human Resources</div>
                 <div class="content-selector-button" id="esp-button">Employee Suggestion Program</div>
             </div>
@@ -87,7 +91,7 @@ $markdown = new Parsedown();
 
                 <div class="loading hidden"></div>
 
-                <div class="row fill">
+                <div class="row fill wrap">
                     <div class="col fill floating-input">
                         <input type="text" id="fname" name="fname" placeholder="" required>
                         <label for="fname">First Name</label>
@@ -97,7 +101,7 @@ $markdown = new Parsedown();
                         <label for="lname">Last Name</label>
                     </div>
                 </div>
-                <div class="row fill">
+                <div class="row fill wrap">
                     <div class="col floating-input fill">
                         <input type="email" id="email" name="email" placeholder="">
                         <label for="email">Email</label>
@@ -121,7 +125,7 @@ $markdown = new Parsedown();
             </form>
         </section>
 
-        <div class=" banner">
+        <div id="eap" class="banner">
             <h2>Employee Assistance Program</h2>
             <a href="tel:1-800-386-7055">1-800-386-7055</a>
         </div>
@@ -144,10 +148,10 @@ $markdown = new Parsedown();
     </p>
 </footer>
 
+<script src="/assets/lib/showdown/showdown.min.js"></script>
 <script src="/assets/js/faq.min.js"></script>
 <script src="/assets/js/sidebar.min.js"></script>
 <script src="/assets/js/skirting.min.js"></script>
 <script src="/assets/js/contact-us.min.js"></script>
-<script src="/assets/lib/showdown/showdown.min.js"></script>
 </body>
 </html>
