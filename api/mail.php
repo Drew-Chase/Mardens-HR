@@ -16,12 +16,9 @@ $EMAIL_TO = 'drew.chase@mardens.com';
 const SUCCESS_MESSAGE = 'HR Contact form successfully submitted. We will get back to you soon!';
 const ERROR_MESSAGE = 'There was an error while submitting the form. Please try again later';
 
+$eps = isset($_GET["esp"]);
+
 $fields = ['fname' => 'FirstName', 'lname' => 'LastName', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'];
-
-if (isset($_GET["esp"])) {
-//    $EMAIL_TO = "<esp@mardens.com>";
-}
-
 
 function createEmailBody(array $fields, array $inputData): string
 {
@@ -40,6 +37,7 @@ $mail = new PHPMailer(true);
 try {
     $config = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/config.json');
     $config = json_decode($config, true);
+
     //Server settings
     $mail->isSMTP();
     $mail->Host = $config['host'];
@@ -51,7 +49,11 @@ try {
 
     $mail->setFrom($config["auth"]["user"], 'HR Contact Form');
     $mail->addAddress($EMAIL_TO);
-    $mail->Subject = $_POST['subject'];
+    if ($eps) {
+        $mail->Subject = "EPS: " . $_POST['subject'];
+    } else {
+        $mail->Subject = "HR Contact: " . $_POST['subject'];
+    }
 
     $emailText = createEmailBody($fields, $_POST);
     $mail->Body = $emailText;
