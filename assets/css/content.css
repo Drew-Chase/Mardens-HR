@@ -83,3 +83,9 @@ form .success h1, form .error h1 {
 form .success p, form .error p {
     width: 50%;
 }
+
+
+#contact-us .loading::after {
+    content: "Sending...";
+    margin-top: -200px;
+}
