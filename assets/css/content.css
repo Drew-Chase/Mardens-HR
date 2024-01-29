@@ -8,6 +8,7 @@
     margin: 5px;
     padding: 1rem;
     text-align: start;
+    min-width: 400px;
 }
 
 .panel button, .panel .button {
@@ -88,4 +89,17 @@ form .success p, form .error p {
 #contact-us .loading::after {
     content: "Sending...";
     margin-top: -200px;
+}
+
+.banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#eap.banner a {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: underline;
 }
