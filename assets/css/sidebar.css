@@ -39,3 +39,7 @@
     opacity: 1;
     background-color: hsla(0, 0%, 100%, 0.1);
 }
+
+#sidebar #hamburger {
+    display: none;
+}
