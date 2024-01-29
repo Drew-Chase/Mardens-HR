@@ -6,7 +6,8 @@ header h1 {
     font-size: 3.9375rem;
     margin: 0;
     line-height: 4.3125rem;
-    color: hsl(0, 90%, 60%, 1);
+    /*color: hsl(0, 90%, 60%, 1);*/
+    color: white;
 }
 
 header p.subtitle {
