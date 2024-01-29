@@ -3,6 +3,14 @@ $(".content-selector-button").on("click", e => {
     const targetId = target.attr("id");
     $(".content-selector-button").attr("active", null);
     target.attr("active", true);
+
+    if (targetId === "esp-button") {
+        $("#content-title").html("Contact EPS");
+    } else {
+        $("#content-title").html("Contact HR");
+    }
+
+
 });
 $("form").on("submit", async e => {
     $("#contact-us .loading").removeClass("hidden");
