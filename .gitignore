@@ -1,3 +1,4 @@
 /.idea/
 /assets/lib/
 /vendor/
+composer.lock
