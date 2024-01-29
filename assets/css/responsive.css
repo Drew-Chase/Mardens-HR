@@ -17,6 +17,7 @@
     .content-selector .content-selector-button {
         width: calc(50% - 2rem);
         min-width: 200px;
+        margin-block: 5px;
     }
 
     #sidebar {
@@ -86,5 +87,9 @@
         margin-inline: 0;
         border-radius: 0;
         padding: 0;
+    }
+
+    #eap.banner a {
+        font-size: 2rem;
     }
 }
