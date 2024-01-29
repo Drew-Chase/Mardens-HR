@@ -1,0 +1,64 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, .button {
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+
+    transition: background-color .2s;
+}
+
+button:hover, .button:hover {
+    background-color: hsl(1, 64%, 48%, 1);
+    cursor: pointer;
+}
+
+.floating-input {
+    position: relative;
+    margin: 1rem 5px;
+}
+
+.floating-input label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: .5;
+    transition: top .2s;
+    cursor: text;
+}
+
+.floating-input input:placeholder-shown ~ label {
+    top: 24px;
+}
+
+.floating-input::placeholder {
+    opacity: 0;
+}
+
+
+input, textarea {
+    padding: 1.5rem 5px;
+    height: 1rem;
+    font-size: 1rem;
+    background-color: #e3e3e3;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+
+textarea {
+    height: 5rem;
+    resize: none;
+}
