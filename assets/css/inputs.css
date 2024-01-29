@@ -26,6 +26,7 @@ button:hover, .button:hover {
 .floating-input {
     position: relative;
     margin: 1rem 5px;
+    min-width: 300px;
 }
 
 .floating-input label {
