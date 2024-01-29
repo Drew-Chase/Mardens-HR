@@ -1,0 +1,61 @@
+:root {
+    --primary: hsl(1, 64%, 58%, 1);
+    --background: hsl(210, 16%, 31%, 1);
+}
+
+body {
+    font-family: "Loto", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    opacity: .5;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    opacity: .5;
+}
+
+.col, .row, .center, .fill {
+    display: flex;
+}
+
+.fill {
+    flex: 1;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.center.horizontal {
+    justify-content: center;
+}
+
+.center.vertical {
+    align-items: center;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header, footer, #sidebar {
+    background-color: var(--background);
+    color: white;
+}
