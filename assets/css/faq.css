@@ -36,3 +36,8 @@
     padding: 1rem;
     font-size: 1rem;
 }
+
+#print-faq-button {
+    aspect-ratio: 1;
+    height: 64px;
+}
