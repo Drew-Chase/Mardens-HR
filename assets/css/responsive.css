@@ -89,7 +89,7 @@
         padding: 0;
     }
 
-    #eap.banner a {
+    .banner a {
         font-size: 2rem;
     }
 }
