@@ -10,10 +10,11 @@
 
 #sidebar h3 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.625rem;
     margin: 0;
     padding: 1rem 0;
+    color: var(--primary);
 }
 
 #sidebar hr {
