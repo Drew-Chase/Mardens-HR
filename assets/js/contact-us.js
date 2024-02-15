@@ -10,10 +10,14 @@ $(".content-selector-button").on("click", e => {
     $(".content-selector-button").attr("active", null);
     target.attr("active", true);
 
+    $("[notip]").css("display", "");
     if (targetId === "esp-button") {
         $("#content-title").html("Contact EPS");
-    } else {
+    } else if (targetId === "human-resources-button") {
         $("#content-title").html("Contact HR");
+    } else if (targetId === "tipline-button") {
+        $("#content-title").html("Contact Tip-Line (Anonymous)");
+        $("[notip]").css("display", "none");
     }
 
 
@@ -31,6 +35,12 @@ $("form").on("submit", async e => {
 
     if ($(".content-selector-button[active]").attr("id") === "esp-button") {
         url.searchParams.append("esp", "true");
+    }
+    if ($(".content-selector-button[active]").attr("id") === "human-resources-button") {
+        url.searchParams.append("hr", "true");
+    }
+    if ($(".content-selector-button[active]").attr("id") === "tipline-button") {
+        url.searchParams.append("tipline", "true");
     }
 
     await $.ajax(url.href, {
