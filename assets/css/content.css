@@ -99,7 +99,7 @@ form .success p, form .error p {
     padding: 2rem 0;
 }
 
-#eap.banner a {
+.banner a {
     font-size: 3rem;
     font-weight: 800;
     color: var(--primary);
@@ -119,7 +119,8 @@ section {
 }
 
 #hr-contact-info a.button i {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: normal;
+    margin-block: auto;
 
 }
