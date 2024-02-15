@@ -17,8 +17,13 @@ const SUCCESS_MESSAGE = 'HR Contact form successfully submitted. We will get bac
 const ERROR_MESSAGE = 'There was an error while submitting the form. Please try again later';
 
 $eps = isset($_GET["esp"]);
+$tipline = isset($_GET["tipline"]);
 
 $fields = ['fname' => 'FirstName', 'lname' => 'LastName', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'];
+if ($tipline) {
+    $fields = ['message' => 'Message'];
+}
+
 
 function createEmailBody(array $fields, array $inputData): string
 {
@@ -51,6 +56,8 @@ try {
     $mail->addAddress($EMAIL_TO);
     if ($eps) {
         $mail->Subject = "EPS: " . $_POST['subject'];
+    } else if ($tipline) {
+        $mail->Subject = "Tip Line: " . $_POST['subject'];
     } else {
         $mail->Subject = "HR Contact: " . $_POST['subject'];
     }
