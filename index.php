@@ -20,14 +20,14 @@ $markdown = new Parsedown();
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/main.min.css">
-    <link rel="stylesheet" href="/assets/css/sidebar.min.css">
-    <link rel="stylesheet" href="/assets/css/skirting.min.css">
-    <link rel="stylesheet" href="/assets/css/scrollbar.min.css">
-    <link rel="stylesheet" href="/assets/css/content.min.css">
-    <link rel="stylesheet" href="/assets/css/inputs.min.css">
-    <link rel="stylesheet" href="/assets/css/faq.min.css">
-    <link rel="stylesheet" href="/assets/css/responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/main.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/main.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/sidebar.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/sidebar.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/skirting.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/skirting.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/scrollbar.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/scrollbar.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/content.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/content.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/inputs.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/inputs.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/faq.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/faq.min.css") ?>">
+    <link rel="stylesheet" href="/assets/css/responsive.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/css/responsive.min.css") ?>">
 
 
     <!-- Font Awesome -->
@@ -53,84 +53,8 @@ $markdown = new Parsedown();
         </div>
     </div>
 
+
     <div id="content" class="col">
-        <section id="hr-news-alerts" class="col">
-            <h2>HR News and Alerts</h2>
-            <div class="row wrap">
-                <div class="panel col fill center vertical">
-                    <h4>Handbook</h4>
-                    <p>Click below to check out our current Employee Handbook</p>
-                    <a href="/assets/pdf/EmployeeHandbook_rev10-2020.pdf" target="_blank" class="button">View</a>
-                </div>
-                <div class="panel col fill center vertical">
-                    <h4>Employment Opportunities</h4>
-                    <p>Looking for a change? Moving to new location? Marden's has job opportunities available on our website for you to consider. We like hiring from within Marden's and want you to be aware of any positions that might be of interest.
-                        Check out what we currently are looking for.</p>
-                    <a href="https://secure3.saashr.com/ta/6127576.jobs?ShowAllOpenings" target="_blank" class="button">Positions Available Now!</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="eap" class="banner">
-            <h2>Employee Assistance Program</h2>
-            <a href="tel:1-800-386-7055">1-800-386-7055</a>
-        </section>
-
-        <section id="contact-us" class="col center horizontal">
-
-            <h2 id="content-title" class="center horizontal" style="margin-bottom: 1rem;">Contact HR</h2>
-            <p class="center horizontal" style="margin-top: 0;">If you don't have an email address, please enter a phone number to best contact you by.</p>
-            <p class="center horizontal">Please select one of the options below to get started!</p>
-            <div class="content-selector center horizontal wrap">
-                <div class="content-selector-button" id="human-resources-button">Contact HR</div>
-                <div class="content-selector-button" id="esp-button">Contact Employee Suggestion Program</div>
-            </div>
-            <form class="col" action="javascript:void(0);" style="display: none">
-
-                <div class="success col">
-                    <h1>Submitted!</h1>
-                    <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
-                </div>
-                <div class="error col">
-                    <h1>Error!</h1>
-                    <p>Sorry, we were unable to submit your message! Please try again later.</p>
-                </div>
-
-                <div class="loading hidden"></div>
-
-                <div class="row fill wrap">
-                    <div class="col fill floating-input">
-                        <input type="text" id="fname" name="fname" placeholder="" required>
-                        <label for="fname">First Name</label>
-                    </div>
-                    <div class="col fill floating-input">
-                        <input type="text" id="lname" name="lname" placeholder="" required>
-                        <label for="lname">Last Name</label>
-                    </div>
-                </div>
-                <div class="row fill wrap">
-                    <div class="col floating-input fill">
-                        <input type="email" id="email" name="email" placeholder="">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col floating-input fill">
-                        <input type="tel" id="phone" name="phone" placeholder="">
-                        <label for="phone">Phone</label>
-                    </div>
-                </div>
-                <div class="col floating-input">
-                    <input type="text" name="subject" id="subject" placeholder="">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col floating-input">
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <label for="message">Message</label>
-                </div>
-
-                <button id="submit-button" title="Submit contact form!"><i class="fa-solid fa-paper-plane"></i></button>
-                <button id="full-submit-button" style="display: none">Submit <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
-        </section>
 
         <section id="hr-contact-info" class="col">
             <h2>HR Contact Information</h2>
@@ -181,6 +105,88 @@ $markdown = new Parsedown();
             </div>
         </section>
 
+        <section id="tipline" class="banner">
+            <h2>Employee Tip Hotline</h2>
+            <p>See something suspicious? Report it anonymous</p>
+            <a href="tel:240-800-6273">240-800-6273</a>
+        </section>
+
+        <section id="contact-us" class="col center horizontal">
+
+            <h2 id="content-title" class="center horizontal" style="margin-bottom: 1rem;">Contact HR</h2>
+            <p class="center horizontal" style="margin-top: 0;">If you don't have an email address, please enter a phone number to best contact you by.</p>
+            <p class="center horizontal">Please select one of the options below to get started!</p>
+            <div class="content-selector center horizontal wrap">
+                <div class="content-selector-button" id="human-resources-button">Contact HR</div>
+                <div class="content-selector-button" id="esp-button">Contact Employee Suggestion Program</div>
+                <div class="content-selector-button" id="tipline-button">Contact Tip-Line</div>
+            </div>
+            <form class="col" action="javascript:void(0);" style="display: none">
+
+                <div class="success col">
+                    <h1>Submitted!</h1>
+                    <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
+                </div>
+                <div class="error col">
+                    <h1>Error!</h1>
+                    <p>Sorry, we were unable to submit your message! Please try again later.</p>
+                </div>
+
+                <div class="loading hidden"></div>
+
+                <div class="row fill wrap" notip>
+                    <div class="col fill floating-input">
+                        <input type="text" id="fname" name="fname" placeholder="">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col fill floating-input">
+                        <input type="text" id="lname" name="lname" placeholder="">
+                        <label for="lname">Last Name</label>
+                    </div>
+                </div>
+                <div class="row fill wrap" notip>
+                    <div class="col floating-input fill">
+                        <input type="email" id="email" name="email" placeholder="">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col floating-input fill">
+                        <input type="tel" id="phone" name="phone" placeholder="">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="col floating-input">
+                    <input type="text" name="subject" id="subject" placeholder="">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col floating-input">
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <button id="submit-button" title="Submit contact form!"><i class="fa-solid fa-paper-plane"></i></button>
+                <button id="full-submit-button" style="display: none">Submit <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </section>
+        <section id="hr-news-alerts" class="col">
+            <h2>HR News and Alerts</h2>
+            <div class="row wrap">
+                <div class="panel col fill center vertical">
+                    <h4>Handbook</h4>
+                    <p>Click below to check out our current Employee Handbook</p>
+                    <a href="/assets/pdf/EmployeeHandbook_rev10-2020.pdf" target="_blank" class="button">View</a>
+                </div>
+                <div class="panel col fill center vertical">
+                    <h4>Employment Opportunities</h4>
+                    <p>Looking for a change? Moving to new location? Marden's has job opportunities available on our website for you to consider. We like hiring from within Marden's and want you to be aware of any positions that might be of interest.
+                        Check out what we currently are looking for.</p>
+                    <a href="https://secure3.saashr.com/ta/6127576.jobs?ShowAllOpenings" target="_blank" class="button">Positions Available Now!</a>
+                </div>
+            </div>
+        </section>
+        <section id="eap" class="banner">
+            <h2>Employee Assistance Program</h2>
+            <a href="tel:1-800-386-7055">1-800-386-7055</a>
+        </section>
         <section id="faq">
             <div class="fill row">
                 <h2 class="fill">FAQ</h2>
@@ -202,10 +208,10 @@ $markdown = new Parsedown();
     </p>
 </footer>
 
-<script src="/assets/lib/showdown/showdown.min.js"></script>
-<script src="/assets/js/faq.min.js"></script>
-<script src="/assets/js/sidebar.min.js"></script>
-<script src="/assets/js/skirting.min.js"></script>
-<script src="/assets/js/contact-us.min.js"></script>
+<script src="/assets/lib/showdown/showdown.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/lib/showdown/showdown.min.js") ?>"></script>
+<script src="/assets/js/faq.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/faq.min.js") ?>"></script>
+<script src="/assets/js/sidebar.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/sidebar.min.js") ?>"></script>
+<script src="/assets/js/skirting.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/skirting.min.js") ?>"></script>
+<script src="/assets/js/contact-us.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/contact-us.min.js") ?>"></script>
 </body>
 </html>
