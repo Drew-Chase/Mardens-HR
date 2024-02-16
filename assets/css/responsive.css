@@ -90,6 +90,16 @@
     }
 
     .banner a {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner > .col {
+        font-size: 1rem;
+        min-width: 300px;
     }
 }
