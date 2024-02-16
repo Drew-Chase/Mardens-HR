@@ -105,10 +105,17 @@ $markdown = new Parsedown();
             </div>
         </section>
 
-        <section id="tipline" class="banner">
-            <h2>Employee Tip Hotline</h2>
-            <p>See something suspicious? Report it anonymous</p>
-            <a href="tel:240-800-6273">240-800-6273</a>
+        <section class="banner row fill">
+            <div class="col fill">
+                <h2>Employee Tip Hotline</h2>
+                <p>See something suspicious? Report it anonymous</p>
+                <a href="tel:240-800-6273">240-800-6273</a>
+            </div>
+            <div class="col fill">
+                <h2>Employee Assistance Program</h2>
+                <p>Have any questions please feel free to reach out</p>
+                <a href="tel:1-800-386-7055">1-800-386-7055</a>
+            </div>
         </section>
 
         <section id="contact-us" class="col center horizontal">
@@ -182,10 +189,6 @@ $markdown = new Parsedown();
                     <a href="https://secure3.saashr.com/ta/6127576.jobs?ShowAllOpenings" target="_blank" class="button">Positions Available Now!</a>
                 </div>
             </div>
-        </section>
-        <section id="eap" class="banner">
-            <h2>Employee Assistance Program</h2>
-            <a href="tel:1-800-386-7055">1-800-386-7055</a>
         </section>
         <section id="faq">
             <div class="fill row">
