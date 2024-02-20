@@ -7,7 +7,7 @@
 // @match        *://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mardens-hr.com
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/Mardens-Inc/Mardens-HR/master/assets/js/kiosk.js
+// @downloadURL  https://cdn.statically.io/gh/mardens-inc/mardens-hr/master/assets/js/kiosk.js
 // ==/UserScript==
 
 (function () {
