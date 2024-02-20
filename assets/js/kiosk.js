@@ -2,11 +2,12 @@
 // @name         Mardens HR Kiosk
 // @namespace    http://tampermonkey.net/
 // @version      2024-02-20
-// @description  try to take over the world!
-// @author       You
+// @description  a script that adds navigation to the kiosk firefox browser
+// @author       Drew Chase
 // @match        *://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mardens-hr.com
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/Mardens-Inc/Mardens-HR/master/assets/js/kiosk.js
 // ==/UserScript==
 
 (function () {
