@@ -46,10 +46,11 @@ try {
     //Server settings
     $mail->isSMTP();
     $mail->Host = $config['host'];
-    $mail->SMTPAuth = true;
+    $mail->SMTPAuth = false;
     $mail->Username = $config["auth"]["user"];
     $mail->Password = $config["auth"]["pass"];
-    $mail->SMTPSecure = 'tls';
+//    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAutoTLS = false;
     $mail->Port = $config['port'];
 
     $mail->setFrom($config["auth"]["user"], 'HR Contact Form');
