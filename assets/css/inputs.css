@@ -31,20 +31,21 @@ button:hover, .button:hover {
 
 .floating-input label {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 5px;
     font-size: 1rem;
     font-weight: bold;
     opacity: .5;
     transition: top .2s;
     cursor: text;
+    color: black;
 }
 
 .floating-input input:placeholder-shown ~ label {
-    top: 24px;
+    top: 22px;
 }
 
-.floating-input::placeholder {
+.floating-input input::placeholder {
     opacity: 0;
 }
 
@@ -54,7 +55,7 @@ input, textarea {
     height: 1rem;
     font-size: 1rem;
     background-color: #e3e3e3;
-    border-radius: 2px;
+    border-radius: 3px;
     outline: none;
     border: none;
 }
@@ -62,4 +63,12 @@ input, textarea {
 textarea {
     height: 5rem;
     resize: none;
+}
+
+#sidebar .floating-input label {
+    top: -5px;
+}
+
+#sidebar .floating-input input:placeholder-shown ~ label {
+    top: 14px;
 }
