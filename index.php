@@ -3,8 +3,6 @@ require_once 'vendor/autoload.php';
 $markdown = new Parsedown();
 ?>
 
-<!--  https://www.figma.com/file/mgEr7Ya2SUsEzk6Kt3PQlL/Mardens-HR?type=design&node-id=2-277&mode=design&t=FiU0WmPAFgUyBEqO-4  -->
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,9 +44,14 @@ $markdown = new Parsedown();
         <div id="sidebar" class="col">
             <button id="hamburger"><i class="fa fa-bars"></i></button>
             <div id="sidebar-items" class="col">
+                <div class="floating-input">
+                    <input name="search" id="search" type="search" placeholder="Search">
+                    <label for="search">Search</label>
+                </div>
                 <?php
                 echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/sidebar.md'));
                 ?>
+                </label>
             </div>
         </div>
     </div>
@@ -59,7 +62,7 @@ $markdown = new Parsedown();
         <section id="hr-contact-info" class="col">
             <h2>HR Contact Information</h2>
             <div class="row wrap">
-                <div class="panel col fill center vertical">
+                <div id="cathy-contact" class="panel col fill center vertical">
                     <h4>Cathy Callahan</h4>
                     <ul>
                         <li>Email:<b> ccallahan@mardens.com</b></li>
@@ -80,7 +83,7 @@ $markdown = new Parsedown();
                         <a href="tel:207-649-3067" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
                     </div>
                 </div>
-                <div class="panel col fill center vertical">
+                <div id="kira-contact" class="panel col fill center vertical">
                     <h4>Kira Estes</h4>
                     <ul>
                         <li>
@@ -106,14 +109,14 @@ $markdown = new Parsedown();
         </section>
 
         <section class="banner row fill">
-            <div class="col fill">
-                <h2>Employee Tip Hotline</h2>
-                <p>See something suspicious? Report it anonymous</p>
+            <div id="tip-line-banner" class="col fill">
+                <h2>Employee "Tip" Hotline</h2>
+                <p>See something suspicious? Report it anonymously</p>
                 <a href="tel:240-800-6273">240-800-6273</a>
             </div>
-            <div class="col fill">
+            <div id="eap-banner" class="col fill">
                 <h2>Employee Assistance Program</h2>
-                <p>Have any questions please feel free to reach out</p>
+                <p>Counseling/Daily Life Assistance/Legal & Financial Services</p>
                 <a href="tel:1-800-386-7055">1-800-386-7055</a>
             </div>
         </section>
@@ -126,7 +129,7 @@ $markdown = new Parsedown();
             <div class="content-selector center horizontal wrap">
                 <div class="content-selector-button" id="human-resources-button">Contact HR</div>
                 <div class="content-selector-button" id="esp-button">Contact Employee Suggestion Program</div>
-                <div class="content-selector-button" id="tipline-button">Contact Tip-Line</div>
+                <div class="content-selector-button" id="tipline-button">Contact "Tip" Hotline</div>
             </div>
             <form class="col" action="javascript:void(0);" style="display: none">
 
@@ -210,9 +213,9 @@ $markdown = new Parsedown();
         1:41:09 PM
     </p>
 </footer>
-
 <script src="/assets/lib/showdown/showdown.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/lib/showdown/showdown.min.js") ?>"></script>
 <script src="/assets/js/faq.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/faq.min.js") ?>"></script>
+<script src="/assets/js/search.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/search.min.js") ?>"></script>
 <script src="/assets/js/sidebar.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/sidebar.min.js") ?>"></script>
 <script src="/assets/js/skirting.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/skirting.min.js") ?>"></script>
 <script src="/assets/js/contact-us.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"] . "/assets/js/contact-us.min.js") ?>"></script>
