@@ -1,5 +1,12 @@
+.darken {
+    filter: brightness(0.1);
+    opacity: .1;
+    display: none !important;
+}
+
 #content {
     padding: 1rem;
+    width: 100%;
 }
 
 .panel {
