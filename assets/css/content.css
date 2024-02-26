@@ -1,7 +1,8 @@
 .darken {
     filter: brightness(0.1);
-    opacity: .1;
-    display: none !important;
+    opacity: .5;
+    pointer-events: none;
+    /*display: none !important;*/
 }
 
 #content {
