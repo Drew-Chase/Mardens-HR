@@ -3,12 +3,21 @@ $("#sidebar a").each((index, element) => {
 });
 
 $("#hamburger").on('click', () => {
-    $("#sidebar").toggleClass("active");
     if ($("#sidebar").hasClass("active")) {
-        $("#hamburger").html("<i class='fas fa-times'></i>");
-        $("body").css("overflow", "hidden");
+        closeSidebar()
     } else {
-        $("#hamburger").html("<i class='fas fa-bars'></i>");
-        $("body").css("overflow", "");
+        openSidebar()
     }
 })
+
+function closeSidebar() {
+    $("#sidebar").removeClass("active");
+    $("#hamburger").html("<i class='fas fa-bars'></i>");
+    $("body").css("overflow", "");
+}
+
+function openSidebar() {
+    $("#sidebar").addClass("active");
+    $("#hamburger").html("<i class='fas fa-times'></i>");
+    $("body").css("overflow", "hidden");
+}
