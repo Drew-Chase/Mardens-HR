@@ -47,6 +47,12 @@ $markdown = new Parsedown();
                 <div class="floating-input">
                     <input name="search" id="search" type="search" placeholder="Search">
                     <label for="search">Search</label>
+                    <div class="search-results">
+                        <div class="result">Cathy Callahan</div>
+                        <div class="result">Cathy Callahan</div>
+                        <div class="result">Cathy Callahan</div>
+                        <div class="result">Cathy Callahan</div>
+                    </div>
                 </div>
                 <?php
                 echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/sidebar.md'));
