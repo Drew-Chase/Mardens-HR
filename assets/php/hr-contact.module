@@ -1,0 +1,49 @@
+<!-- HR Contact Section -->
+<section id="hr-contact-info" class="col">
+    <h2>HR Contact Information</h2>
+    <div class="row wrap">
+        <div id="cathy-contact" class="panel col fill center vertical">
+            <h4>Cathy Callahan</h4>
+            <ul>
+                <li>Email:<b> ccallahan@mardens.com</b></li>
+                <li>
+                    Phone: <b>
+                        (207) 660-9218</b>
+                </li>
+                <li>
+                    Cellphone: <b> (207) 649-3067</b>
+                </li>
+            </ul>
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <div class="row">
+                <a href="mailto:ccallahan@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:207-660-9218" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
+                <a href="tel:207-649-3067" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
+            </div>
+        </div>
+        <div id="kira-contact" class="panel col fill center vertical">
+            <h4>Kira Estes</h4>
+            <ul>
+                <li>
+                    Email: <b> kira.estes@mardens.com</b>
+                </li>
+                <li>
+                    Phone: <b> (207) 660-9292</b>
+                </li>
+                <li>
+                    Cellphone: <b> (603) 455-1804</b>
+                </li>
+            </ul>
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <div class="row">
+                <a href="mailto:kira.estes@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:207-660-9292" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
+                <a href="tel:603-455-1804" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

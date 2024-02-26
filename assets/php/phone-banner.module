@@ -1,0 +1,13 @@
+<!-- Phone Banners Section -->
+<section class="banner row fill">
+    <div id="tip-line-banner" class="col fill">
+        <h2>Employee "Tip" Hotline</h2>
+        <p>See something suspicious? Report it anonymously</p>
+        <a href="tel:240-800-6273">240-800-6273</a>
+    </div>
+    <div id="eap-banner" class="col fill">
+        <h2>Employee Assistance Program</h2>
+        <p>Counseling/Daily Life Assistance/Legal & Financial Services</p>
+        <a href="tel:1-800-386-7055">1-800-386-7055</a>
+    </div>
+</section>

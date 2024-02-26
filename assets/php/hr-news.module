@@ -1,0 +1,17 @@
+<!-- HR News Section -->
+<section id="hr-news-alerts" class="col">
+    <h2>HR News and Alerts</h2>
+    <div class="row wrap">
+        <div class="panel col fill center vertical">
+            <h4>Handbook</h4>
+            <p>Click below to check out our current Employee Handbook</p>
+            <a href="/assets/pdf/EmployeeHandbook_rev10-2020.pdf" target="_blank" class="button">View</a>
+        </div>
+        <div class="panel col fill center vertical">
+            <h4>Employment Opportunities</h4>
+            <p>Looking for a change? Moving to new location? Marden's has job opportunities available on our website for you to consider. We like hiring from within Marden's and want you to be aware of any positions that might be of interest.
+                Check out what we currently are looking for.</p>
+            <a href="https://secure3.saashr.com/ta/6127576.jobs?ShowAllOpenings" target="_blank" class="button">Positions Available Now!</a>
+        </div>
+    </div>
+</section>
