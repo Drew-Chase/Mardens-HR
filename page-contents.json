@@ -61,5 +61,25 @@
 			"questions",
 			"answers"
 		]
+	},
+	{
+		"displayName": "Handbook",
+		"parentElementId": "hr-news-alerts",
+		"keywords": [
+			"handbook",
+			"questions",
+			"answers"
+		]
+	},
+	{
+		"displayName": "Employment Opportunities",
+		"parentElementId": "hr-news-alerts",
+		"keywords": [
+			"jobs",
+			"positions",
+			"employment",
+			"opportunities",
+			"change"
+		]
 	}
 ]
