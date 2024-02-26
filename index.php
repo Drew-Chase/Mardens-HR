@@ -1,3 +1,8 @@
+<!--
+Author: Drew Chase - Marden's Inc Lead Software Engineer
+Date Created: 02/26/2024
+-->
+
 <?php
 require_once 'vendor/autoload.php';
 $markdown = new Parsedown();
@@ -48,166 +53,24 @@ $markdown = new Parsedown();
                     <input name="search" id="search" type="search" placeholder="Search">
                     <label for="search">Search</label>
                     <div class="search-results">
-                        <div class="result">Cathy Callahan</div>
-                        <div class="result">Cathy Callahan</div>
-                        <div class="result">Cathy Callahan</div>
-                        <div class="result">Cathy Callahan</div>
                     </div>
                 </div>
                 <?php
                 echo $markdown->text(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/md/sidebar.md'));
                 ?>
-                </label>
             </div>
         </div>
     </div>
 
 
     <div id="content" class="col">
-
-        <section id="hr-contact-info" class="col">
-            <h2>HR Contact Information</h2>
-            <div class="row wrap">
-                <div id="cathy-contact" class="panel col fill center vertical">
-                    <h4>Cathy Callahan</h4>
-                    <ul>
-                        <li>Email:<b> ccallahan@mardens.com</b></li>
-                        <li>
-                            Phone: <b>
-                                (207) 660-9218</b>
-                        </li>
-                        <li>
-                            Cellphone: <b> (207) 649-3067</b>
-                        </li>
-                    </ul>
-                    <br>
-                    <hr style="width: 50%;">
-                    <br>
-                    <div class="row">
-                        <a href="mailto:ccallahan@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="tel:207-660-9218" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
-                        <a href="tel:207-649-3067" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
-                    </div>
-                </div>
-                <div id="kira-contact" class="panel col fill center vertical">
-                    <h4>Kira Estes</h4>
-                    <ul>
-                        <li>
-                            Email: <b> kira.estes@mardens.com</b>
-                        </li>
-                        <li>
-                            Phone: <b> (207) 660-9292</b>
-                        </li>
-                        <li>
-                            Cellphone: <b> (603) 455-1804</b>
-                        </li>
-                    </ul>
-                    <br>
-                    <hr style="width: 50%;">
-                    <br>
-                    <div class="row">
-                        <a href="mailto:kira.estes@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="tel:207-660-9292" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
-                        <a href="tel:603-455-1804" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="banner row fill">
-            <div id="tip-line-banner" class="col fill">
-                <h2>Employee "Tip" Hotline</h2>
-                <p>See something suspicious? Report it anonymously</p>
-                <a href="tel:240-800-6273">240-800-6273</a>
-            </div>
-            <div id="eap-banner" class="col fill">
-                <h2>Employee Assistance Program</h2>
-                <p>Counseling/Daily Life Assistance/Legal & Financial Services</p>
-                <a href="tel:1-800-386-7055">1-800-386-7055</a>
-            </div>
-        </section>
-
-        <section id="contact-us" class="col center horizontal">
-
-            <h2 id="content-title" class="center horizontal" style="margin-bottom: 1rem;">Contact HR</h2>
-            <p class="center horizontal" style="margin-top: 0;">If you don't have an email address, please enter a phone number to best contact you by.</p>
-            <p class="center horizontal">Please select one of the options below to get started!</p>
-            <div class="content-selector center horizontal wrap">
-                <div class="content-selector-button" id="human-resources-button">Contact HR</div>
-                <div class="content-selector-button" id="esp-button">Contact Employee Suggestion Program</div>
-                <div class="content-selector-button" id="tipline-button">Contact "Tip" Hotline</div>
-            </div>
-            <form class="col" action="javascript:void(0);" style="display: none">
-
-                <div class="success col">
-                    <h1>Submitted!</h1>
-                    <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
-                </div>
-                <div class="error col">
-                    <h1>Error!</h1>
-                    <p>Sorry, we were unable to submit your message! Please try again later.</p>
-                </div>
-
-                <div class="loading hidden"></div>
-
-                <div class="row fill wrap" notip>
-                    <div class="col fill floating-input">
-                        <input type="text" id="fname" name="fname" placeholder="">
-                        <label for="fname">First Name</label>
-                    </div>
-                    <div class="col fill floating-input">
-                        <input type="text" id="lname" name="lname" placeholder="">
-                        <label for="lname">Last Name</label>
-                    </div>
-                </div>
-                <div class="row fill wrap" notip>
-                    <div class="col floating-input fill">
-                        <input type="email" id="email" name="email" placeholder="">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col floating-input fill">
-                        <input type="tel" id="phone" name="phone" placeholder="">
-                        <label for="phone">Phone</label>
-                    </div>
-                </div>
-                <div class="col floating-input">
-                    <input type="text" name="subject" id="subject" placeholder="">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col floating-input">
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <label for="message">Message</label>
-                </div>
-
-                <button id="submit-button" title="Submit contact form!"><i class="fa-solid fa-paper-plane"></i></button>
-                <button id="full-submit-button" style="display: none">Submit <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
-        </section>
-        <section id="hr-news-alerts" class="col">
-            <h2>HR News and Alerts</h2>
-            <div class="row wrap">
-                <div class="panel col fill center vertical">
-                    <h4>Handbook</h4>
-                    <p>Click below to check out our current Employee Handbook</p>
-                    <a href="/assets/pdf/EmployeeHandbook_rev10-2020.pdf" target="_blank" class="button">View</a>
-                </div>
-                <div class="panel col fill center vertical">
-                    <h4>Employment Opportunities</h4>
-                    <p>Looking for a change? Moving to new location? Marden's has job opportunities available on our website for you to consider. We like hiring from within Marden's and want you to be aware of any positions that might be of interest.
-                        Check out what we currently are looking for.</p>
-                    <a href="https://secure3.saashr.com/ta/6127576.jobs?ShowAllOpenings" target="_blank" class="button">Positions Available Now!</a>
-                </div>
-            </div>
-        </section>
-        <section id="faq">
-            <div class="fill row">
-                <h2 class="fill">FAQ</h2>
-                <button id="print-faq-button"><i class="fa-solid fa-up-right-from-square"></i></button>
-            </div>
-            <div class="faq-items col">
-            </div>
-        </section>
-
+        <?php
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/hr-contact.module';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/phone-banner.module';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/contact-form.module';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/hr-news.module';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/faq.module';
+        ?>
     </div>
 </main>
 
