@@ -12,7 +12,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-$EMAIL_TO = 'drew.chase@mardens.com';
+//$EMAIL_TO = 'drew.chase@mardens.com';
+$EMAIL_TO = 'hr@mardens.com';
 const SUCCESS_MESSAGE = 'HR Contact form successfully submitted. We will get back to you soon!';
 const ERROR_MESSAGE = 'There was an error while submitting the form. Please try again later';
 
