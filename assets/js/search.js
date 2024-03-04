@@ -27,8 +27,11 @@ $.get("/page-contents.json").then(response => data = response).then(() => {
     }
 });
 $("input#search").on("keyup", e => {
+    search();
     if (e.key === "Enter") {
-        $("#hamburger").trigger("click");
+        closeSidebar();
+        searchResults.find(".result").first().trigger("click");
+        $("input#search").trigger('blur')
     }
     search();
 })
@@ -37,7 +40,7 @@ function search() {
     const result = fuzzySearchData();
     searchResults.empty();
     if (result.length === 0) {
-        searchResults.append("<p>No results found</p>");
+        searchResults.append(`<p style="color: black;font-weight: 500;text-align: center;">No results found</p>`);
         return;
     }
     result.forEach(item => {
