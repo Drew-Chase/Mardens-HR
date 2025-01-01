@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="FTP" confirmBeforeUploading="false" compareModeInSync="TEXT" showNewOnTargetInSync="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="FTP">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/vendor" />
+            <excludedPath path="/cgi-bin" />
+            <excludedPath path="/composer.lock" />
+            <excludedPath path="/README.MD" />
+            <excludedPath path="/page-contents.json" />
+            <excludedPath path="/BofMe.com" />
+            <excludedPath path="/bargainsofmaine.com" />
+            <excludedPath path="/Backup" />
+            <excludedPath path="/_build" />
+            <excludedPath path="/.easyssl_backup" />
+            <excludedPath path="/.ftpquota" />
+            <excludedPath path="/.gitignore" />
+            <excludedPath path="/.htaccess" />
+            <excludedPath path="/composer.json" />
+            <excludedPath path="/config.json" />
+            <excludedPath path="/error.log" />
+            <excludedPath path="/error_log" />
+            <excludedPath path="/sitemap.xml" />
+            <excludedPath path="/tmp.mardens-hr.com" />
+            <excludedPath path="/assets/lib/fontawesome" />
+            <excludedPath path="/assets/lib/showdown" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="mini-pc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
