@@ -1,5 +1,5 @@
 use actix_web::{
-	get, middleware, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder,
+    get, middleware, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder,
 };
 use awc::Client;
 use futures_util::stream::StreamExt;
@@ -14,7 +14,7 @@ async fn main() -> std::io::Result<()> {
     std::env::set_var("RUST_LOG", "trace");
     env_logger::init();
 
-    let port = 1420; // Port to listen on
+    let port = 1422; // Port to listen on
     let server = HttpServer::new(move || {
         let app = App::new()
             .wrap(middleware::Logger::default())
