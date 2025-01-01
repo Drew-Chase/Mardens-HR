@@ -6,9 +6,7 @@ import {NextUIProvider} from "@nextui-org/react";
 
 import "./assets/scss/index.scss";
 import Home from "./assets/pages/Home.tsx";
-import About from "./assets/pages/About.tsx";
-import Navigation from "./assets/components/Navigation.tsx";
-import {applyTheme} from "./assets/ts/Theme.ts";
+import Navigation from "./assets/components/Navigation/Navigation.tsx";
 
 
 ReactDOM.createRoot($("#root")[0]!).render(
@@ -19,9 +17,7 @@ ReactDOM.createRoot($("#root")[0]!).render(
     </React.StrictMode>
 );
 
-export function MainContentRenderer()
-{
-    applyTheme();
+export function MainContentRenderer() {
     const navigate = useNavigate();
     return (
         <NextUIProvider navigate={navigate}>
@@ -29,7 +25,6 @@ export function MainContentRenderer()
             <Routes>
                 <Route>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
                 </Route>
             </Routes>
         </NextUIProvider>
