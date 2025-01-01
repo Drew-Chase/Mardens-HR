@@ -23,26 +23,22 @@
                 <a href="tel:207-649-3067" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
             </div>
         </div>
-        <div id="kira-contact" class="panel col fill center vertical">
-            <h4>Kira Estes</h4>
+        <div id="tiffany-contact" class="panel col fill center vertical">
+            <h4>Tiffany Bernatchez</h4>
             <ul>
                 <li>
-                    Email: <b> kira.estes@mardens.com</b>
+                    Email: <b> tiffany.bernatchez@mardens.com</b>
                 </li>
                 <li>
-                    Phone: <b> (207) 660-9292</b>
-                </li>
-                <li>
-                    Cellphone: <b> (603) 455-1804</b>
+                    Phone: <b> (207) 830-4045</b>
                 </li>
             </ul>
             <br>
             <hr style="width: 50%;">
             <br>
             <div class="row">
-                <a href="mailto:kira.estes@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:207-660-9292" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
-                <a href="tel:603-455-1804" target="_blank" class="button"><i class="fa-solid fa-mobile"></i></a>
+                <a href="mailto:tiffany.bernatchez@mardens.com" target="_blank" class="button"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:207-830-4045" target="_blank" class="button"><i class="fa-solid fa-phone"></i></a>
             </div>
         </div>
     </div>
