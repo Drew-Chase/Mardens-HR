@@ -8,6 +8,14 @@
     <div id="eap-banner" class="col fill">
         <h2>Employee Assistance Program</h2>
         <p>Counseling/Daily Life Assistance/Legal & Financial Services</p>
-        <a href="tel:1-800-386-7055">1-800-386-7055</a>
+        <a href="tel:1-888-628-4824">1-888-628-4824</a>
+        <button onclick="openEAP()">View the EAP PDF</button>
     </div>
 </section>
+
+<script>
+    function openEAP()
+    {
+        window.open('/assets/pdf/Lincoln EAP - PDF 2025.pdf', "_blank")
+    }
+</script>
